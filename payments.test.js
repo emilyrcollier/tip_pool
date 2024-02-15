@@ -26,7 +26,7 @@ it('should payment update #paymentTable on appendPaymentTable()', function () {
 
     appendPaymentTable(curPayment);
 
-    let curTdList = document.querySelectorAll('#payment table tbody tr td');
+    let curTdList = document.querySelectorAll('#paymentTable tbody tr td');
 
     expect(curTdList.length).toEqual(4);
     expect(curTdList[0].innerText).toEqual('$100');
